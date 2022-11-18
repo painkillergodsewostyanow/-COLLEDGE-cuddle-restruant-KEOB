@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Food(models.Model):
+    photo = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    weight = models.IntegerField(blank=True)
+    cost = models.IntegerField(blank=True)
+

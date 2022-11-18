@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/style-menu.css'%}">
+    <title>{{food}}</title>
+</head>
+    <div class="header">
+        <div class="container">
+            <div class="header-line-1">
+                <a href="#">
+                    <div class="order">
+                        <div class="cart">
+                            <img  class="cart-photo" src="{% static 'main/img/order.svg'%}" alt="">
+                        </div>
+                        <span>корзина</span>
+                    </div>
+                </a>
+                <div class="logo">
+                    <a href="{% url 'home' %}"><img class="logo-photo" src="{% static 'main/img/logo.svg'%}" alt=""></a>
+                </div>
+                <div class="info">
+                    <div class="main-title-1">
+                        МЕНЮ РЕСТОРАНА ”Keob”
+                    </div>
+                    <div class="info">
+                        <div class="info-unit">
+                            <img src="{% static 'main/img/image-2-header-place.svg'%}" alt="">
+                            Московская область, Солнечногорский район, микрорайон Резиденс
+                        </div>
+                        <div class="info-unit">
+                            <img src="{% static 'main/img/image-3-phone.svg'%}" alt="">
+                            +7(567)456-93-99
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="vine-card">
+                    <span>Винная карта</span>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<div class="menu-link">
+        <a class="link" href="#breakfast">Завтраки</a>
+        <a class="link" href="#sushi rolls">Суши и ролы</a>
+        <a class="link" href="#snacks and salads">Закуски и салаты</a>
+        <a class="link" href="#soup">Супы</a>
+        <a class="link" href="#hot meal">Горячие блюда</a>
+        <a class="link" href="#dish with wok">Блюда с вока</a>
+        <a class="link" href="#desserts">Десерты</a>
+        <a class="link" href="#drink">Напитки</a>
+</div>
+<div id="breakfast">
+    <div class="title-1-lvl">Завтраки</div>
+    <hr class="line-1">
+    <div class="title-2-lvl">Тосты и драники</div>
+    <hr class="line-2">
+    <div class="food-place">
+        <div class="food-templates-1">
+            <div class="photo-f-templates">
+                <img class="food-photo" src="{% static 'main/img/food-fo-test.svg'%}" alt="">
+            </div>
+            <div class="food-title">
+                ТОСТ С АВОКАДО И СКРЭМБЛОМ
+            </div>
+            <div class="food-interface">
+                <div class="food-cart-butt">
+                    В корзину
+                </div>
+                <div class="food-weight">
+                    300г
+                </div>
+                <div class="food-costs">
+                    490р
+                </div>
+            </div>
+        </div>
+        <div class="food-templates">
+            <div class="photo-f-templates">
+
+            </div>
+        </div>
+        <div class="food-templates">
+            <div class="photo-f-templates">
+
+            </div>
+        </div>
+    </div>
+        <div class="title-2-lvl">Тосты и драники</div>
+        <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Каша</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Панкейки</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+</div>
+<div id="sushi rolls">
+    <div class="title-1-lvl">Суши и роллы</div>
+    <hr class="line-1">
+    <div class="title-2-lvl">Нигири</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Открытые суши</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Роллы</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Поке и боулы</div>
+    <hr class="line-2">
+    <div class="food-place">
+    </div>
+</div>
+<div id="snacks and salads">
+    <div class="title-1-lvl">Салаты и закуски</div>
+    <hr class="line-1">
+    <div class="title-2-lvl">Спринг роллы</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Салаты</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Вонтоны</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+</div>
+<div id="soup">
+    <div class="title-1-lvl">Салаты и закуски</div>
+    <hr class="line-1">
+    <div class="title-2-lvl">Спринг роллы</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+</div>
+<div id="hot meal">
+    <div class="title-1-lvl">Горячие блюда</div>
+    <hr class="line-1">
+    <div class="title-2-lvl">Кушияки (японские шашлычки на гриле)</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Яки (глазированные мясо/рыба в соусе терияки«жареный») </div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+</div>
+<div id="dish with wok">
+    <div class="title-1-lvl">Блюда с вока</div>
+    <hr class="line-1">
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+</div>
+<div id="desserts">
+    <div class="title-1-lvl">Десерты</div>
+    <hr class="line-1">
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+</div>
+<div id="drink">
+    <div class="title-1-lvl">Напитки безалкогольные</div>
+    <hr class="line-1">
+    <div class="title-2-lvl">Белый чай</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Зеленый чай</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Красный чай</div>
+    <hr class="line-2">
+    <div class="food-place">
+
+    </div>
+    <div class="title-2-lvl">Улун и Пуэр</div>
+    <hr class="line-2">
+</div>
+</html>

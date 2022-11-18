@@ -3,7 +3,7 @@
 <html lang="eu">
 <head>
         <meta charset="UTF-8">
-        <link type="text/css" rel="stylesheet" href="{% static 'main/css/style.css' %}"/>
+        <link rel="stylesheet" href="{% static 'main/css/style-main.css'%}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
         <div class="container-1">
                 <div class="header-1-line-info">
                         <div class="header-1-line-info">
-                                <img class="header-1-img" src="{% static 'main/img/image-1-time.svg' %}" alt="">
+                                <img class="header-1-img" src="{% static 'main/img/image-1-time.svg'%}" alt="">
                                 <div class="header-1-time-work">
                                         ЕЖЕДНЕВНО С 10:00 ДО 00:00
                                 </div>
@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="header-1-line-info">
-                                <img class="header-1-img" src="{% static 'main/img/image-2-header-place.svg' %}" alt="">
+                                <img class="header-1-img" src="{% static 'main/img/image-2-header-place.svg'%}" alt="">
                                 <a target="_blank"
                                    class="link" href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/geo/mikrorayon_r
                                         ezidens/53206855/?ll=37.263529%2C55.907983&z=16">
@@ -31,12 +31,12 @@
                         </div>
 
                         <div class="header-1-line-info">
-                                <img class="header-1-img" src="{% static 'main/img/image-3-phone.svg' %}" alt="">
+                                <img class="header-1-img" src="{% static 'main/img/image-3-phone.svg'%}" alt="">
                                 +7(567)456-93-99
                         </div>
 
                         <div class="header-1-line-info">
-                                <img class="header-1-img" src="{% static 'main/img/static/image-4-mail.svg' %}" alt="">
+                                <img class="header-1-img" src="{% static 'main/img/image-4-mail.svg'%}" alt="">
                                 keob@moscow
                         </div>
                         </div>
@@ -45,26 +45,29 @@
         <div class="main">
                 <div class="header-2-line-info">
                         <div>
-                                <img class="logo" src="{% static 'main/img/logo.svg' %}" alt="" >
+                                <a href="{% url 'home' %}"><img class="logo" src="{% static 'main/img/logo.svg'%}" alt="" ></a>
                         </div>
                         <div class="heading">
-                                КОРЕЙСКИЙ РЕСТОРАН “KEOB”
+                                КОРЕЙСКИЙ РЕСТОРАН “keob”
                                 <div class="link-menu">
                                         <a class="link-header-2-menu" href="#">О НАС</a>
-                                        <a class="link-header-2-menu" href="#">МЕНЮ</a>
+
+
+                                        <a class="link-header-2-menu" href="{%url 'menu'%}">МЕНЮ</a>
                                         <a class="link-header-2-menu" href="#">ГАЛЕРЕЯ</a>
                                         <a class="link-header-2-menu" href="#">ДОСТАВКА</a>
                                 </div>
                         </div>
                 </div>
                 <div class="main-page-photo-1">
+                        <img class="main-photo" src="{% static 'main/img/main-page-photo1.svg'%}" alt="">
                 </div>
         </div>
 
 
 <div class="info-place-1">
         <div class="info-photo-1">
-
+                <img class="photo1" src="{% static 'main/img/main-page-photo2.svg'%}" alt="">
         </div>
                 <div class="txt1"><span class="info-title">О РЕСТОРАНЕ</span>
                         <div class="info-txt-1">Корейский ресторан Keob приглашает<br>
@@ -114,7 +117,7 @@
                 </a>
         </div>
         <div class="info-photo-2">
-                <img class="photo2" src="{% static 'main/img/main-page-photo3.svg' %}" alt="">
+                <img class="photo2" src="{% static 'main/img/main-page-photo3.svg'%}" alt="">
         </div>
 </div>
 <div class="info-place-3">
@@ -136,20 +139,95 @@
                 </div>
         </div>
         <div class="info-photo-3">
-                <img class="photo3" src="{% static 'main/img/main-page-photo4.svg' %}" alt="">
+                <img class="photo3" src="{% static 'main/img/main-page-photo4.svg'%}" alt="">
         </div>
 
 </div>
 <div class="info-place-4">
         <div class="info-photo-4">
-                <img class="photo4" src="{% static 'main/img/main-page-photo5.svg' %}" alt="">
+                <img class="photo4" src="{% static 'main/img/main-page-photo5.svg'%}" alt="">
         </div>
         <div class="info-txt-4">
-
+                На первом этаже находится<br>
+                зона для отдыха, с мягими<br>
+                креслами и уютной<br>
+                домашней атмосферой.<br>
+                Здесь, в тихой и спокойной<br>
+                атмосфере вы можете<br>
+                уединиться в компании<br>
+                семьи, друзей, коллег.<br>
+                На втором этаже<br>
+                находится основной<br>
+                ресторан с великолепным<br>
+                открывающимся видом и<br>
+                потрясающим интерьером.<br>
+                <br>
+                <br>
+                А также на территории<br>
+                нашего ресторана<br>
+                находится потрясающий<br>
+                водопад, на фоне которого<br>
+                вы сможете сделать<br>
+                необычные фото!
+        </div>
+</div>
+<div class="info-place-5">
+        <span class="info-title-1">АКЦИИ И СКИДКИ</span>
+        <div class = info-photo-5>
+                <img  class="photo5" src="{% static 'main/img/main-page-photo6.svg'%}" alt="">
+        </div>
+        <div class="info-txt-5">
+                <div class="txt-5">
+                        <span class="txt-5-span1">СКИДКА - 15 %</span>
+                        <p class="txt-5-p1">В день рождения</p>
+                        <p>Скидка 15 % предоставляется только держателем электронных карт.</p>
+                </div>
+        </div>
+</div>
+        <div class="info-place-6">
+                <div class="for-push">
+                        <span class="info-title">СЕРТИФИКАТЫ</span>
+                        <div class="info-txt-6">
+                                Современный ресторан - это всегда история о жизни.<br>
+                                Блюда, не оставят равнодушным никого.<br>
+                                Подарите незабываемые впечатления своим близким.<br>
+                                Подарочные сертификаты 2000, 5000, 7000 и 10000 рублей<br>
+                                вы можете приобрести в ресторане.<br>
+                                <br>
+                                <br>
+                                Оригинальный подарок к любому празднику!
+                        </div>
+                </div>
+        </div>
+<hr class="hr1">
+<div class="last-info-place">
+        <h1>МЫ ЖДЕМ ВАС В ГОСТИ В РЕСТОРАНЕ “Keob”</h1>
+        <span class="spam-1">Также вы можете поделиться<br>впечатлениями о нашем ресторане</span>
+        <div class="live-but">
+                <a class="move-butt" href="#"><img src="{% static 'main/img/Ellipse 1.svg'%}" alt=""></a>
+                <a href="#"> <img src="{% static 'main/img/Ellipse 2.svg'%}" alt=""></a>
+        </div>
+        <div>
+                <p class="contact">КОНТАКТЫ:</p>
+                <div class="container-2">
+                        <div class="last-info-place-phone">
+                                <img src="static/image-3-phone.svg" alt="">
+                                <p class="txt-in-conteiner-2">+7(567)456-93-99</p>
+                        </div>
+                        <div class="last-info-place-place">
+                                <img src="static/image-2-header-place.svg" alt="">
+                                <p class="txt-in-conteiner-2">Московская область, Солнечногорский район,<br>
+                                        микрорайон Резиденс.</p>
+                        </div>
+                        <div class="last-info-place-mail">
+                                <img src="static/image-4-mail.svg" alt="">
+                                <p class="txt-in-conteiner-2">keob@moscow</p>
+                        </div>
+                        <p class="last-info-place-work-time">ЕЖЕДНЕВНО С 10:00 ДО 00:00</p>
+                </div>
         </div>
 </div>
 <div class="check">
-
 </div>
 </body>
 </html>
