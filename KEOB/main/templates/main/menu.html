@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'main/css/style-menu.css'%}">
-    <title>{{food}}</title>
+    <title>menu</title>
 </head>
     <div class="header">
         <div class="container">
@@ -21,7 +21,7 @@
                     </div>
                 </a>
                 <div class="logo">
-                    <a href="{% url 'home' %}"><img class="logo-photo" src="{% static 'main/img/logo.svg'%}" alt=""></a>
+                    <a href="{% url 'home' %}"><img class="logo-photo" src="{% static 'main/img/logo1.svg'%}" alt=""></a>
                 </div>
                 <div class="info">
                     <div class="main-title-1">
@@ -64,31 +64,59 @@
     <div class="food-place">
         <div class="food-templates-1">
             <div class="photo-f-templates">
-                <img class="food-photo" src="{% static 'main/img/food-fo-test.svg'%}" alt="">
+                <img class="food-photo" src="{{1.photo}}" alt="{{1.photo.url}}" >
             </div>
             <div class="food-title">
-                ТОСТ С АВОКАДО И СКРЭМБЛОМ
+                {{1.title}}
             </div>
             <div class="food-interface">
-                <div class="food-cart-butt">
-                    В корзину
+                </a><div class="food-cart-butt">
+                    в корзину
                 </div>
                 <div class="food-weight">
-                    300г
+                    {{1.weight}}
                 </div>
                 <div class="food-costs">
-                    490р
+                    {{1.cost}} р
                 </div>
             </div>
         </div>
         <div class="food-templates">
             <div class="photo-f-templates">
-
+                <img class="food-photo" src="{{2.photo}}" alt="{{2.photo.url}}">
+            </div>
+            <div class="food-title">
+                {{2.title}}
+            </div>
+            <div class="food-interface">
+                </a><div class="food-cart-butt">
+                    в корзину
+                </div>
+                <div class="food-weight">
+                    {{2.weight}}
+                </div>
+                <div class="food-costs">
+                    {{2.cost}} р
+                </div>
             </div>
         </div>
         <div class="food-templates">
             <div class="photo-f-templates">
-
+                <img  src="{{3.photo}}" alt="{{3.photo.url}}">
+            </div>
+            <div class="food-title">
+                3.title
+            </div>
+            <div class="food-interface">
+                </a><div class="food-cart-butt">
+                    в корзину
+                </div>
+                <div class="food-weight">
+                    3.weight
+                </div>
+                <div class="food-costs">
+                    3.cost
+                </div>
             </div>
         </div>
     </div>

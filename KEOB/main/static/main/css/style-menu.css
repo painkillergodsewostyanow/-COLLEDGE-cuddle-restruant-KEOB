@@ -2,10 +2,9 @@ body{
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 1% 5%;
     font-weight: bold;
-}
-body{
     background: #10454F;
 }
+
 .logo{
     width: 20%;
     height: 15%;
@@ -105,7 +104,7 @@ body{
    border: 1px solid #F99058;
 }
 .food-place{
-    display: flex;
+    display: table;
     width: 100%;
     height: calc(10px + 60vh);
     margin-bottom: 5vh;
@@ -115,7 +114,6 @@ body{
     width: 30%;
     height: calc(10px + 50vh);
     border: 1px solid #FFFFFF;
-    margin-left: 8% ;
     border-radius: 5vh;
     background: #FFFFFF;
 }
@@ -138,17 +136,15 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 5vh;
+    background: black;
 }
 .food-title{
     text-align: center;
     margin-top: -2vh;
     margin-bottom: 5vh;
-    white-space: nowrap;
     font-size: 1.5vh;
-    font-weight: 1000;
 }
 .food-interface{
-    justify-content: space-evenly;
     align-items: center;
     margin-top: 2vh;
     margin-right: 10%;

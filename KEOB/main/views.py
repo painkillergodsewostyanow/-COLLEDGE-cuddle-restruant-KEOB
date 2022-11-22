@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
 from main.models import Food
 
 
@@ -8,10 +9,12 @@ def index(request):
 
 
 def menu(request):
-    return render(request, 'main/menu.html')
+    food = {}
+    for i in Food.objects.all():
+        food[i.pk] = i
+        print(food)
+    return render(request, 'main/menu.html', food)
 
 
 def reg_user(request):
-    f = Food.objects.all()
-    return render(request, 'main/menu.html', {'food': f})
-
+    return render(request, 'main/menu.html')
