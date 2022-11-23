@@ -12,7 +12,7 @@ def menu(request):
     food = {}
     for i in Food.objects.all():
         food[i.pk] = i
-        print(food)
+    print(food.values())
     return render(request, 'main/menu.html', food)
 
 

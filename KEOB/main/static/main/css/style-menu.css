@@ -4,7 +4,6 @@ body{
     font-weight: bold;
     background: #10454F;
 }
-
 .logo{
     width: 20%;
     height: 15%;
@@ -48,7 +47,6 @@ body{
     color: #F99058;
     font-size: calc(10px + 4vw);
     letter-spacing: 1vh ;
-    white-space: nowrap;
     margin-bottom: 1%;
 }
 .info-unit{
@@ -75,14 +73,13 @@ body{
 .menu-link{
     margin-top: 5%;
     text-align: center;
-    white-space: nowrap;
     margin-bottom: 3vh;
 }
 .link{
     text-decoration: none;
     color: #F99058;
     margin-right: 2vw;
-    font-size: 2vh;
+    font-size: 1.9vh;
 }
 .title-1-lvl{
     color: #FFFFFF;
@@ -104,7 +101,7 @@ body{
    border: 1px solid #F99058;
 }
 .food-place{
-    display: table;
+    display: flex;
     width: 100%;
     height: calc(10px + 60vh);
     margin-bottom: 5vh;
@@ -112,20 +109,24 @@ body{
 .food-templates{
     margin-top: 3%;
     width: 30%;
-    height: calc(10px + 50vh);
+    height: 85%;
     border: 1px solid #FFFFFF;
     border-radius: 5vh;
+    margin-left: 8%;
     background: #FFFFFF;
+    overflow: hidden auto;
 }
 .food-templates-1{
     margin-top: 3%;
     width: 30%;
-    height: calc(10px + 50vh);
+    height: 85%;
     border: 1px solid #FFFFFF;
     border-radius: 5vh;
     background: #FFFFFF;
+    overflow: hidden auto;
 }
 .photo-f-templates{
+    background: gray;
     width: 80%;
     height: 60%;
     margin: 10%;
@@ -136,20 +137,16 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 5vh;
-    background: black;
 }
 .food-title{
     text-align: center;
-    margin-top: -2vh;
-    margin-bottom: 5vh;
-    font-size: 1.5vh;
+    margin: -2vh 5% 5vh;
 }
-.food-interface{
+.food-interface{;
+    justify-content: center;
     align-items: center;
-    margin-top: 2vh;
-    margin-right: 10%;
-    margin-left: 10%;
     display: flex;
+    margin-top: -2vh;
 }
 .food-cart-butt{
     border: 1px solid #F99058;
@@ -159,13 +156,17 @@ body{
     font-weight: bold;
     color: #FFFFFF;
     white-space: nowrap;
+    margin-right: 4%;
 }
 .food-costs{
     border: 1px solid #F99058;
     color: #F99058;
     border-radius: 10px;
     padding: 2% 8% 2% 8%;
+    margin-right: 4%;
+    white-space: nowrap;
 }
 .food-weight{
     opacity: 0.5;
+    margin-right: 4%;
 }
