@@ -11,7 +11,7 @@ class Food(models.Model):
         return f"{self.photo, self.title, self.weight, self.cost}"
 
     class Meta:
-        verbose_name = 'Блюда'
+        verbose_name = 'Блюдо'
         verbose_name_plural = 'Блюда'
         ordering = ['pk']
 

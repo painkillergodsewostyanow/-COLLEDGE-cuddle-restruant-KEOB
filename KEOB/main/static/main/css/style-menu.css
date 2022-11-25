@@ -149,24 +149,28 @@ body{
     margin-top: -2vh;
 }
 .food-cart-butt{
-    border: 1px solid #F99058;
-    border-radius: 12px;
-    padding: 2%;
-    background: #F99058;
-    font-weight: bold;
     color: #FFFFFF;
-    white-space: nowrap;
-    margin-right: 4%;
+    background: #F99058;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #F99058;
+    padding: 2.5% 5% 2.5% 5%;
+    font-size: 1.5vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+.food-cart-butt:active{
+    background: #10454F;
 }
 .food-costs{
     border: 1px solid #F99058;
     color: #F99058;
     border-radius: 10px;
     padding: 2% 8% 2% 8%;
-    margin-right: 4%;
     white-space: nowrap;
 }
 .food-weight{
     opacity: 0.5;
+    margin-left: 4%;
     margin-right: 4%;
 }
