@@ -15,3 +15,16 @@ class Food(models.Model):
         verbose_name_plural = 'Блюда'
         ordering = ['pk']
 
+
+class Post(models.Model):
+    name = models.CharField(max_length=255)
+    time_create = models.DateTimeField(auto_now_add=True)
+    txt = models.TextField(blank=False)
+
+    def __str__(self):
+        return f"{self.name, self.txt, self.time_create}"
+
+    class Meta:
+        verbose_name = 'Комментарий'
+        verbose_name_plural = 'Коментарии'
+        ordering = ['time_create']

@@ -1,0 +1,37 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/style-comments.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+    <title>Коментарии</title>
+</head>
+<body>
+    <div class="header">
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'addpage' %}"><div class="make_comm_butt">ОСТАВИТЬ ОТЗЫВ</div></a>
+        {% else %}
+            <a href="{% url 'log' %}"><div class="make_comm_butt">ОСТАВИТЬ ОТЗЫВ</div></a>
+        {% endif %}
+        <div class="title">
+            ОТЗЫВЫ О РЕСТОРАНЕ
+        </div>
+    </div>
+    {% for comment in com %}
+    <div class="comment_place">
+        <div class="comment">
+            <div class="info_block">
+                <div class="time">{{comment.time_create}}</div>
+                <div class="name">{{comment.name}}</div>
+            </div>
+            <div class="txt_block">
+                {{comment.txt}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>

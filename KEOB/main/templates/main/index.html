@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="{% static 'main/css/style-main.css'%}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap"
+              rel="stylesheet">
         <title>KEOB</title>
 </head>
 <body>
@@ -45,16 +46,16 @@
         <div class="main">
                 <div class="header-2-line-info">
                         <div>
-                                <a href="{% url 'home' %}"><img class="logo" src="{% static 'main/img/logo1.svg'%}" alt="" ></a>
+                                <a href="{% url 'home' %}"><img class="logo" src="{% static 'main/img/logo.png'%}" alt="" ></a>
                         </div>
                         <div class="heading">
                                 КОРЕЙСКИЙ РЕСТОРАН “keob”
                                 <div class="link-menu">
-                                        <a class="link-header-2-menu" href="#">О НАС</a>
+                                        <a class="link-header-2-menu" href="#about">О НАС</a>
 
 
                                         <a class="link-header-2-menu" href="{%url 'menu'%}">МЕНЮ</a>
-                                        <a class="link-header-2-menu" href="#">ГАЛЕРЕЯ</a>
+                                        <a class="link-header-2-menu" href="#gallery">ГАЛЕРЕЯ</a>
                                         <a class="link-header-2-menu" href="#">ДОСТАВКА</a>
                                 </div>
                         </div>
@@ -66,7 +67,7 @@
 
 
 <div class="info-place-1">
-        <div class="info-photo-1">
+        <div id="about" class="info-photo-1">
                 <img class="photo1" src="{% static 'main/img/main-page-photo2.svg'%}" alt="">
         </div>
                 <div class="txt1"><span class="info-title">О РЕСТОРАНЕ</span>
@@ -120,7 +121,7 @@
                 <img class="photo2" src="{% static 'main/img/main-page-photo3.svg'%}" alt="">
         </div>
 </div>
-<div class="info-place-3">
+<div id ="gallery" class="info-place-3">
         <div class="txt3">
                 <span class="info-title">ИНТЕРЬЕР</span>
                 <div class="info-txt-3">
@@ -204,23 +205,23 @@
         <h1>МЫ ЖДЕМ ВАС В ГОСТИ В РЕСТОРАНЕ “Keob”</h1>
         <span class="spam-1">Также вы можете поделиться<br>впечатлениями о нашем ресторане</span>
         <div class="live-but">
-                <a class="move-butt" href="#"><img src="{% static 'main/img/Ellipse 1.svg'%}" alt=""></a>
-                <a href="#"> <img src="{% static 'main/img/Ellipse 2.svg'%}" alt=""></a>
+                <a class="move-butt" href="{% url 'com' %}"><img src="{% static 'main/img/Ellipse 1.svg'%}" alt=""></a>
+                <a href="{% url 'com' %}"> <img src="{% static 'main/img/Ellipse 2.svg'%}" alt=""></a>
         </div>
         <div>
                 <p class="contact">КОНТАКТЫ:</p>
                 <div class="container-2">
                         <div class="last-info-place-phone">
-                                <img src="static/image-3-phone.svg" alt="">
+                                <img src="{% static 'main/img/image-3-phone.svg'%}" alt="">
                                 <p class="txt-in-conteiner-2">+7(567)456-93-99</p>
                         </div>
                         <div class="last-info-place-place">
-                                <img src="static/image-2-header-place.svg" alt="">
+                                <img src="{% static 'main/img/image-2-header-place.svg'%}" alt="">
                                 <p class="txt-in-conteiner-2">Московская область, Солнечногорский район,<br>
                                         микрорайон Резиденс.</p>
                         </div>
                         <div class="last-info-place-mail">
-                                <img src="static/image-4-mail.svg" alt="">
+                                <img src="{% static 'main/img/image-4-mail.svg'%}"alt="">
                                 <p class="txt-in-conteiner-2">keob@moscow</p>
                         </div>
                         <p class="last-info-place-work-time">ЕЖЕДНЕВНО С 10:00 ДО 00:00</p>

@@ -18,9 +18,10 @@ body{
     object-fit: fill;
 }
 .header-line-1{
-    margin-top: -5%;
+    margin-top: -1%;
 }
 .order{
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -30,7 +31,6 @@ body{
     height: 2vw;
     border-radius: 8px;
     background-color: #F99058;
-    margin-top:7%;
     font-size:calc(1px + 0.8vw);
     max-width: 100%;
     position: absolute;

@@ -1,0 +1,48 @@
+body{
+    background-color: #10454F;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+.make_comm_butt{
+    display: inline-block;
+    color: #FFFFFF;
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 0.5% 1% 0.5% 1%;
+    background-color: #F99058;
+    margin-bottom: 4%;
+}
+.header{
+    margin-top: 3%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.title{
+    color: #FFFFFF;
+    font-size: 7vh;
+}
+.comment_place{
+    padding: 2% 7%;
+}
+.info_block{
+    display: flex;
+    padding: 1% 2% 1% 2%;
+    background-color: #F99058;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+.time{
+    white-space: nowrap;
+}
+.name{
+    margin-left: 2%;
+
+}
+.txt_block{
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2%;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+}

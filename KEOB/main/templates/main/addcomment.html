@@ -6,19 +6,18 @@
     <link rel="stylesheet" href="{% static 'main/css/form-style.css'%}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap"
-              rel="stylesheet">
-    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+    <title>Оставить коментарий</title>
 </head>
 <body>
 <div class="main">
-        <form method="post">
+    <form method="post">
             {% csrf_token %}
             {% for f in form %}
             <p><label class="form-label" for="{{f.id_for_label}}"></label>{{ f }}</p>
             <div class="form-error">{{f.errors}}</div>
             {% endfor %}
-            <button class="b2" type="submit">Регистрация</button>
+            <button class="b3" type="submit">Оставить коментарий</button>
         </form>
 </div>
 </body>

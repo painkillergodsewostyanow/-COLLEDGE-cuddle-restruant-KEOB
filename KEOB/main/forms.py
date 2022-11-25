@@ -5,9 +5,12 @@ from django.contrib.auth.models import User
 
 
 class RegUser(UserCreationForm):
-    username = forms.CharField(label='логин',widget=forms.TextInput(attrs={'class': 'form-input'}))
-    password1 = forms.CharField(label='пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
-    password2 = forms.CharField(label='повторите пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
+    username = forms.CharField(label='логин', widget=forms.TextInput(attrs={'class': 'form-input',
+                                                                            'placeholder': 'Имя'}))
+    password1 = forms.CharField(label='пароль', widget=forms.PasswordInput(attrs={'class': 'form-input',
+                                                                                  'placeholder': 'Пароль'}))
+    password2 = forms.CharField(label='повторите пароль', widget=forms.PasswordInput(attrs={'class': 'form-input',
+                                                                                'placeholder': 'Повторите пароль'}))
 
     class Meta:
         model = User
@@ -20,5 +23,18 @@ class RegUser(UserCreationForm):
 
 
 class LogUser(AuthenticationForm):
-    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    password = forms.CharField(label='Логин', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
+    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-input',
+                                                                            'placeholder': 'Имя'}))
+    password = forms.CharField(label='Логин', widget=forms.PasswordInput(attrs={'class': 'form-input',
+                                                                            'placeholder': 'Пароль'}))
+
+
+class AddComment(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = {'name', 'txt'}
+
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-input',  'placeholder': 'Имя'}),
+            'txt': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'Комментарий'})
+        }

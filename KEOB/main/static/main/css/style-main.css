@@ -39,9 +39,10 @@ body{
 }
 
 .header-2-line-info{
+
     display: flex;
     align-items: center;
-    margin: -5% 0 32px 32px ;
+    margin: -2% 0 32px 32px ;
     justify-content: space-evenly;
 }
 
@@ -334,4 +335,8 @@ body{
 }
 .container-2 p{
     margin-bottom: 0.1%;
+}
+.container-2{
+    align-items: center;
+    color: #FFFFFF;
 }

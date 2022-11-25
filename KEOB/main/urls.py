@@ -6,7 +6,10 @@ urlpatterns = [
     path('', index, name='home'),
     path('menu', menu, name='menu'),
     path('reg', reg.as_view(), name='reg'),
-    path('log', log_in.as_view(), name='log')
+    path('log', log_in.as_view(), name='log'),
+    path('com', comment, name='com'),
+    path('logout', logout_user, name='logout'),
+    path('addcomment', add_page, name='addpage')
 ]
 
 
