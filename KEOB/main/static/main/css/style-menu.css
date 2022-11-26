@@ -91,6 +91,7 @@ body{
     color: #F99058;
     font-size: 2vh;
     margin-bottom: -1vh;
+    margin-top: 5%;
 }
 .line-1{
     border: 1px solid #FFFFFF;
@@ -108,8 +109,8 @@ body{
 }
 .food-templates{
     margin-top: 3%;
-    width: 30%;
-    height: 95%;
+    width: 40%;
+    height: 98%;
     border: 1px solid #FFFFFF;
     border-radius: 5vh;
     margin-left: 8%;
@@ -118,8 +119,8 @@ body{
 }
 .food-templates-1{
     margin-top: 3%;
-    width: 30%;
-    height: 95%;
+    width: 40%;
+    height: 98%;
     border: 1px solid #FFFFFF;
     border-radius: 5vh;
     background: #FFFFFF;
