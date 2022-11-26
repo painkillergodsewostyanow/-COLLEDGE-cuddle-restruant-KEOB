@@ -86,6 +86,7 @@ body{
     font-weight: bold;
     font-size: 2vh;
     margin-bottom: -2vh;
+    margin-top: 5%;
 }
 .title-2-lvl{
     color: #F99058;
@@ -110,7 +111,7 @@ body{
 .food-templates{
     margin-top: 3%;
     width: 40%;
-    height: 98%;
+    height: 100%;
     border: 1px solid #FFFFFF;
     border-radius: 5vh;
     margin-left: 8%;
@@ -120,7 +121,7 @@ body{
 .food-templates-1{
     margin-top: 3%;
     width: 40%;
-    height: 98%;
+    height: 100%;
     border: 1px solid #FFFFFF;
     border-radius: 5vh;
     background: #FFFFFF;
