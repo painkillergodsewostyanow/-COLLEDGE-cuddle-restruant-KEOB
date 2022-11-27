@@ -39,7 +39,6 @@ body{
 }
 
 .header-2-line-info{
-
     display: flex;
     align-items: center;
     margin: -2% 0 32px 32px ;
@@ -220,9 +219,6 @@ body{
     color: #FFFFFF;
     letter-spacing: 0.05em;
 }
-.check{
-    height: 27vw;
-}
 .info-place-5{
     padding-left: 10%;
     margin-top: 10%;
@@ -339,4 +335,7 @@ body{
 .container-2{
     align-items: center;
     color: #FFFFFF;
+}
+.check{
+    height: 20vh ;
 }

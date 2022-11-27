@@ -1,0 +1,80 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/delivery-style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap"
+          rel="stylesheet">
+    <title>Доставка</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">УСЛОВИЯ ДОСТАВКИ И ОПЛАТЫ</div>
+        <div class="info_block-1">
+            <div class="txt-1">
+                Дорогие гости!<br>
+                Вы можете оформить доставку онлайн или позвонив по телефону:
+            </div>
+            <div class="phonk_link">
+                <img src="{% static 'main/img/image-3-phone.svg'%}" alt="">
+                +7(567)456-93-99
+            </div>
+            <div class="txt-2">
+                Просим обратить внимание, что на доставку имеются ограничения.<br><br>
+                Для вашего удобства ниже представлена карта с зонами бесплатной доставки.
+            </div>
+            <div class="zone-del">
+                <span class="zone">ЗОНА А:</span>
+                <div class="txt-3">Доставка <span>бесплатная</span> при сумме заказа от 2000р</div>
+            </div>
+            <div class="zone-del">
+                <span class="zone">ЗОНА Б:</span>
+                <div class="txt-3">Доставка <span>бесплатная</span> при сумме заказа от 3000р</div>
+            </div>
+        </div>
+    </div>
+            <div  class="map"
+                  style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                       style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+                    <a href="https://yandex.ru/maps/213/moscow/?from=mapframe&ll=37.554116%2C55.
+                    647277&mode=usermaps&source=mapframe&um=constructor%3A711711f2885c792035bcc041c8522916cb7657c0be8fc
+                    448e11d1b1b18c09993&utm_medium=mapframe&utm_source=maps&z=11.2" style="color:#eee;font-size:12px;
+                    position:absolute;top:14px;">Карта Москвы с улицами и номерами домов — Яндекс Карты</a><iframe
+                        src="https://yandex.ru/map-widget/v1/-/CCUfnBtN8B" width="100%" height="100%" frameborder="1"
+                        allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+    <div class="container">
+        <div class="info">
+            <a href="{% url 'home' %}"><img width="100%" height="40%" src="{%static 'main/img/logo.png'%}"></a>
+            <div class="info_block-2">
+                <span>КАТАЛОГ</span>
+                <a class="link" href="{% url 'home'%}#about"><div class="list_link_unit">О нас</div></a>
+                <a class="link" href="{% url 'menu' %}"><div class="list_link_unit">Меню</div></a>
+                <a class="link" href="{% url 'home'%}#gallery"><div class="list_link_unit">Галерея</div></a>
+                <a class="link" href="{% url 'delivery'%}"><div class="list_link_unit">Доставка</div></a>
+            </div>
+            <div class="info_block-3    ">
+                <span>КОНТАКТЫ</span>
+                <div class="cont-block">
+                    <div class="list_link_unit-2">
+                        <img src="{%static 'main/img/image-3-phone.svg'%}">
+                        +7(567)456-93-99
+                    </div>
+                    <div class="list_link_unit-2">
+                        <img src="{%static 'main/img/image-2-header-place.svg'%}">
+                        Московская область, Солнечногорский<br>район, микрорайон Резиденс.
+                    </div>
+                    <div class="list_link_unit-2">
+                        <img src="{%static 'main/img/image-4-mail.svg'%}">
+                        keob@moscow
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

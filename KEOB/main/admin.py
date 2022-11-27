@@ -18,10 +18,10 @@ class FoodAdmin(admin.ModelAdmin):
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = 'pk', 'name', 'txt', 'time_create'
-    list_display_links = 'pk',
+    list_display = 'name', 'txt', 'time_create'
+    list_display_links = 'name',
     search_fields = 'name', 'pk'
 
 
 admin.site.register(Food, FoodAdmin)
-admin.site.register(Post)
+admin.site.register(Post, PostAdmin)

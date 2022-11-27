@@ -67,6 +67,9 @@ def add_page(request):
             return redirect('com')
     else:
         form = form = AddComment(initial={'name': request.user.username, 'txt': str(good_word_by_default)})
-    return render(request, 'main/addcomment.html', {'form': form})
+    return render(request, 'main/add_comment.html', {'form': form})
 
+
+def delivery(request):
+    return render(request, 'main/delivery.html')
 

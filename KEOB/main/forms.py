@@ -33,7 +33,6 @@ class AddComment(forms.ModelForm):
     class Meta:
         model = Post
         fields = {'name', 'txt'}
-
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-input',  'placeholder': 'Имя'}),
             'txt': forms.TextInput(attrs={'class': 'form-input', 'placeholder': 'Комментарий'})

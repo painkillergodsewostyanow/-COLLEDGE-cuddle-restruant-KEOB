@@ -9,7 +9,8 @@ urlpatterns = [
     path('log', log_in.as_view(), name='log'),
     path('com', comment, name='com'),
     path('logout', logout_user, name='logout'),
-    path('addcomment', add_page, name='addpage')
+    path('addcomment', add_page, name='addpage'),
+    path('delivery', delivery, name='delivery')
 ]
 
 
