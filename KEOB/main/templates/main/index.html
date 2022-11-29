@@ -56,8 +56,12 @@
 
                                         <a class="link-header-2-menu" href="{% url 'menu' %}">МЕНЮ</a>
                                         <a class="link-header-2-menu" href="#gallery">ГАЛЕРЕЯ</a>
-                                        <a class="link-header-2-menu" href="{% url 'delivery' %}">ДОСТАВКА</a>
+                                        <a target="_blank" class="link-header-2-menu" href="{% url 'delivery' %}">ДОСТАВКА</a>
                                 </div>
+                                 <div class="button_log">
+                                        <a class="link_log" href="{% url 'log' %}"><span class="button">войти</span></a>
+                                        <a class="link_log" href="{% url 'logout' %}"><span class="button">выйти</span></a>
+                                 </div>
                         </div>
                 </div>
                 <div class="main-page-photo-1">
@@ -113,7 +117,7 @@
                         ресторана по телефону<br>
                         +7(567)456-93-99
                 </div>
-                <a class="more-info" href="#">
+                <a class="more-info" href="{% url 'delivery' %}">
                         <span>подробнее</span>
                 </a>
         </div>
@@ -205,8 +209,8 @@
         <h1>МЫ ЖДЕМ ВАС В ГОСТИ В РЕСТОРАНЕ “Keob”</h1>
         <span class="spam-1">Также вы можете поделиться<br>впечатлениями о нашем ресторане</span>
         <div class="live-but">
-                <a class="move-butt" href="{% url 'com' %}"><img src="{% static 'main/img/Ellipse 1.svg'%}" alt=""></a>
-                <a href="{% url 'com' %}"> <img src="{% static 'main/img/Ellipse 2.svg'%}" alt=""></a>
+                <a target="_blank" class="move-butt" href="{% url 'com' %}"><img src="{% static 'main/img/Ellipse 1.svg'%}" alt=""></a>
+                <a target="_blank" href="{% url 'com' %}"> <img src="{% static 'main/img/Ellipse 2.svg'%}" alt=""></a>
         </div>
         <div>
                 <p class="contact">КОНТАКТЫ:</p>
