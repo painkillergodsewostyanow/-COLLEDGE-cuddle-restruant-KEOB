@@ -17,7 +17,6 @@
             {% csrf_token %}
             {% for f in form %}
             <p><label class="form-label" for="{{f.id_for_label}}"></label>{{ f }}</p>
-            <div class="form-error">{{f.errors}}</div>
             {% endfor %}
             <button class="b1" type="submit">Войти</button>
             <div class="reg_link"><a class="link" href="{%url 'reg'%}">Зарегистрируйтесь</a></div>

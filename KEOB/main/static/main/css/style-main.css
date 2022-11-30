@@ -67,6 +67,7 @@ body{
     color: #F99058;
     text-align: center;
 
+
 }
 .link-header-2-menu{
     margin-right: 50px;
@@ -338,4 +339,20 @@ body{
 }
 .check{
     height: 20vh ;
+}
+.button{
+    border-radius: 12px;
+    font-size: 1vw;
+    letter-spacing: 0.5vh;
+    border: 2px solid #F99058;
+    padding: 0.5% 2% 0.5% 2%;
+    color: #FFFFFF;
+    background-color: #F99058;
+}
+.link_log{
+    text-decoration: none;
+    margin-left: 2%;
+}
+.button_log{
+    float: right;
 }
