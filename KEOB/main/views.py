@@ -66,10 +66,21 @@ def add_page(request):
             form.save()
             return redirect('com')
     else:
-        form = form = AddComment(initial={'name': request.user.username, 'txt': str(good_word_by_default)})
+        form = AddComment(initial={'name': request.user.username, 'txt': str(good_word_by_default)})
     return render(request, 'main/add_comment.html', {'form': form})
 
 
 def delivery(request):
     return render(request, 'main/delivery.html')
+
+
+def do_book(request):
+    if request.method == 'POST':
+        form = DoBook(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = DoBook()
+    return render(request, 'main/do_book.html', {'form': form})
 

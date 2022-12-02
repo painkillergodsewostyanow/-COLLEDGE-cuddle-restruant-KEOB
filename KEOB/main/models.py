@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import RegexValidator
 
 
 class Food(models.Model):
@@ -28,3 +29,28 @@ class Post(models.Model):
         verbose_name = 'Комментарий'
         verbose_name_plural = 'Коментарии'
         ordering = ['time_create']
+
+
+class Book(models.Model):
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',message="'+999999999'")
+    name = models.CharField(max_length=255, verbose_name='имя')
+    phoneNumber = models.CharField(validators=[phone_regex], max_length=17, verbose_name="Номер телефона")
+    email = models.EmailField(max_length=100, verbose_name='почта')
+    numberOfPeople = models.IntegerField(verbose_name='количество человек')
+    data = models.DateField(error_messages="не корректная дата", verbose_name='Дата')
+    time = models.TimeField(error_messages="не корректное время", verbose_name='Время')
+    reason = models.CharField(max_length=255, verbose_name='Повод посещения')
+    accept = models.BooleanField(default=False, verbose_name='подтвержденно')
+    isPass = models.BooleanField(default=False, verbose_name='прошло')
+
+
+    class Meta:
+        verbose_name = 'Бронь'
+        verbose_name_plural = 'Бронь'
+        ordering = ['data']
+
+
+
+
+
+

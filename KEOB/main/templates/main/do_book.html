@@ -1,0 +1,24 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'main/css/book-style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+    <title>Бронирование</title>
+</head>
+<body>
+    <div class="main">
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="b4" type="submit">Забронировать</button>
+            <span>Данная заявка не является бронью, для подтверждения<br>
+                менеджер свяжется с Вами в течение часа. Время работы<br>
+                менеджера с 10:00 до 23:00</span>
+        </form>
+    </div>
+</body>
+</html>

@@ -23,5 +23,12 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = 'name', 'pk'
 
 
+class BookAdmin(admin.ModelAdmin):
+    list_display = 'name', 'data', 'time', 'accept', 'isPass'
+    list_display_links = 'name',
+    search_fields = 'data', 'time', 'name'
+
+
 admin.site.register(Food, FoodAdmin)
 admin.site.register(Post, PostAdmin)
+admin.site.register(Book, BookAdmin)

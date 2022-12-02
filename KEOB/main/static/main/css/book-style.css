@@ -1,0 +1,39 @@
+.b4{
+    background-color: #FFFFFF;
+    padding: 5% 30% 5% 30%;
+    color: #F99058;
+    border: 2px solid #F99058;
+    border-radius: 6px;
+    margin-bottom: 4%;
+    white-space: nowrap;
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+::placeholder{
+    text-align: center;
+}
+.main {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main form input{
+    text-align: center;
+}
+.main form {
+    max-width: 100%;
+}
+.main form input{
+    padding: 5% 20%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+form span{
+    display: block;
+    text-align: center;
+    font-size: 1vh;
+    margin-right: 20%;
+}
