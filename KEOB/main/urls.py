@@ -13,5 +13,3 @@ urlpatterns = [
     path('delivery', delivery, name='delivery'),
     path('book', do_book, name='book')
 ]
-
-

@@ -1,5 +1,3 @@
-import os
-from pathlib import Path
 """
 Django settings for KEOB project.
 

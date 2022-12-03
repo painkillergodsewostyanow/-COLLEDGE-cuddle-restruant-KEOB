@@ -32,7 +32,7 @@ class Post(models.Model):
 
 
 class Book(models.Model):
-    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',message="'+999999999'")
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="'+999999999'")
     name = models.CharField(max_length=255, verbose_name='имя')
     phoneNumber = models.CharField(validators=[phone_regex], max_length=17, verbose_name="Номер телефона")
     email = models.EmailField(max_length=100, verbose_name='почта')
@@ -43,14 +43,7 @@ class Book(models.Model):
     accept = models.BooleanField(default=False, verbose_name='подтвержденно')
     isPass = models.BooleanField(default=False, verbose_name='прошло')
 
-
     class Meta:
         verbose_name = 'Бронь'
         verbose_name_plural = 'Бронь'
         ordering = ['data']
-
-
-
-
-
-
